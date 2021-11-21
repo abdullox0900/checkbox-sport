@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+/* WRAPPER */
+.wrapper {
+    width: 440px;
+    padding: 45px 43px 50px 43px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    background-image: url("../img/basketball-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: right -40px bottom -15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+.wrapper__header {
+    margin: 0;
+    margin-bottom: 36px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.wrap-form__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.wrap-form__name--activ {
+    color: #AAAAAA;
+}
+
+.wrap-form__controller {
+    width: 35px;
+    height: 35px;
+    margin-right: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wrap-form__controller {
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: center;
+}
+
+input:checked+.controller1 {
+    background-image: url("../img/table-tennis-icon.svg");
+    box-shadow: rgba(39, 66, 214, 0.911) 0px 0px 0px 3px;
+}
+
+input:checked+.controller2 {
+    background-image: url("../img/basketball-ball-icon.svg");
+    box-shadow: rgba(39, 66, 214, 0.911) 0px 0px 0px 3px;
+}
+
+input:checked+.controller3 {
+    background-image: url("../img/volleyball-ball-icon.svg");
+    box-shadow: rgba(39, 66, 214, 0.911) 0px 0px 0px 3px;
+}
+
+.controller4 {
+    background-image: url("../img/hockey-puck-icon.svg");
+    border: 1px solid #AAAAAA;
+}

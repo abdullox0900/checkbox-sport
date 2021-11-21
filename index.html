@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Checkbox</title>
 </head>
+
 <body>
 
-    <h1 class="nameheader">
-        salom
-    </h1>
-    
+    <h1 class=""></h1>
+
+    <div class="wrapper">
+        <h2 class="wrapper__header">Qaysi sport turiga qiziqasiz?</h2>
+
+        <form action="" class="wrap-form" method="post">
+            <label class="wrap-form__label">
+                <input type="radio" class="visually-hidden" name="sport" value="tennis">
+                <span class="wrap-form__controller controller1"></span>
+                <div class="wrap-form__name">Stol tennisi</div>
+            </label>
+            <label class="wrap-form__label">
+                <input type="radio" class="visually-hidden" name="sport" value="tennis">
+                <span class="wrap-form__controller controller2"></span>
+                <div class="wrap-form__name">Basketbol</div>
+            </label>
+            <label class="wrap-form__label">
+                <input type="radio" class="visually-hidden" name="sport" value="tennis">
+                <span class="wrap-form__controller controller3"></span>
+                <div class="wrap-form__name">Voleybol</div>
+            </label>
+            <label class="wrap-form__label">
+                <input type="radio" class="visually-hidden" name="sport" value="tennis" disabled>
+                <span class="wrap-form__controller controller4"></span>
+                <div class="wrap-form__name wrap-form__name--activ">Hokkey</div>
+            </label>
+        </form>
+    </div>
+
 </body>
+
 </html>
